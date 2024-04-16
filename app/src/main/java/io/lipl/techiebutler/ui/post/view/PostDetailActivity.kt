@@ -1,8 +1,8 @@
 package io.lipl.techiebutler.ui.post.view
 
-import android.app.ActionBar
 import android.os.Bundle
 import android.view.MenuItem
+import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.core.view.ViewCompat
@@ -38,7 +38,7 @@ class PostDetailActivity : BaseActivity() {
             insets
         }
 
-        if (intent != null && intent.extras != null && intent.extras!!.getInt("id") != null)
+        if (intent != null && intent.extras != null)
             id = intent.extras!!.getInt("id")
 
         if (viewModel.responsePostDetail.value?.data == null) {
@@ -78,14 +78,17 @@ class PostDetailActivity : BaseActivity() {
                         setPostData(postDetail)
                     }
                     // loader gone
+                    binding.progressBar.visibility  = View.GONE
                 }
 
                 Resource.Status.ERROR -> {
                     // loader gone
+                    binding.progressBar.visibility  = View.GONE
                 }
 
                 Resource.Status.LOADING -> {
                     // loader visible
+                    binding.progressBar.visibility  = View.VISIBLE
                 }
             }
         }

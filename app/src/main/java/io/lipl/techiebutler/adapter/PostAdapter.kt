@@ -1,6 +1,5 @@
 package io.lipl.techiebutler.adapter
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,7 +9,6 @@ import io.lipl.techiebutler.domain.model.PostItem
 
 class PostAdapter(
     private var list: MutableList<PostItem?>?,
-    val context: Context,
     val onItemClicked: (Int, View) -> Unit
 ) :
     RecyclerView.Adapter<PostAdapter.MyHolder>() {

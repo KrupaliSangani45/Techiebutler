@@ -2,7 +2,6 @@ package io.lipl.techiebutler.domain.rest
 
 
 import io.lipl.techiebutler.domain.model.PostItem
-import io.lipl.techiebutler.domain.model.PostResponse
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Path

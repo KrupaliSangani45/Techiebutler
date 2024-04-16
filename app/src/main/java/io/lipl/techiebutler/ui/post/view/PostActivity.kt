@@ -60,8 +60,7 @@ class PostActivity : BaseActivity() {
         mAdapter =
             PostAdapter(
                 viewModel.postList,
-                this
-            ) { position, view ->
+            ) { position, _ ->
 //                when (view.id) {
                 val postDetail = viewModel.postList[position]
                 val intent = Intent(this, PostDetailActivity::class.java)

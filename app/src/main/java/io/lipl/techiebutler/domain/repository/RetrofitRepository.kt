@@ -1,7 +1,6 @@
 package io.lipl.techiebutler.domain.repository
 
 import io.lipl.techiebutler.domain.model.PostItem
-import io.lipl.techiebutler.domain.model.PostResponse
 import io.lipl.techiebutler.domain.rest.RetrofitService
 import io.lipl.techiebutler.utils.BaseApiResponse
 import io.lipl.techiebutler.utils.Resource

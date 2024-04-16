@@ -1,6 +1,5 @@
 package io.lipl.techiebutler.utils
 
-import okhttp3.ResponseBody
 
 data class Resource<out T>(val status: Status, val data: T?, val message: String?,var errorBody: String?) {
 
