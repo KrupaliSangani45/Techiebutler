@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="clr_divider">#E4E6EB</color>
+    <color name="bg_screen">#E8E9EC</color>
+
+    <color name="colorPrimary">#3D5A80</color>
+    <color name="colorPrimaryDark">#3D5A80</color>
+    <color name="colorAccent">#0E0E0E</color>
+    <color name="toolbarTextColor">#ffffff</color>
+</resources>
